@@ -10,12 +10,13 @@
 <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>WebStudio</title>
 <link rel="stylesheet" href="./css/style.css">
 
@@ -24,7 +25,7 @@
 <body>
     <div class="header">
         <div class="container header-container">
-        <nav class="header-navigation-list list">
+        <nav class="header-navigation list">
             <a href="./index.html" class="header-logo link">Web<span class="header-logo-raleway link">Studio</span></a>
             <ul class="header-menu list">
                 <li class="header-menu-item"><a class="header-menu-link link" href="./index.html">Studio</a></li>
@@ -34,44 +35,49 @@
         </nav>
         <address class="header-address">
             <ul class="header-contacts list">
-                <li> <a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li> <a class="header-contacts-link link" href="tel:+110001111111" >+11 (000) 111-11-11</a></li>
+                <li class="header-menu-contact"> <a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-menu-contact"> <a class="header-contacts-link link" href="tel:+110001111111" >+11 (000) 111-11-11</a></li>
             </ul>
         </address>
     </div>
     </header>
 
     <main>
-        <section>
-
-        <h1 hidden>main portfolio</h1>
-
+        <section class="section">
+        <div class="container">
+        <h1 hidden class="visualy-hidden">main portfolio</h1>
         <ul class="menu-list list">
-            <li><button type="button" class="menu-button-link">All</button></li>
-            <li><button type="button" class="menu-button-link">Web Site</button></li>
-            <li><button type="button" class="menu-button-link">App</button></li>
-            <li><button type="button" class="menu-button-link">Design</button></li>
-            <li><button type="button" class="menu-button-link">Marketing</button></li>
+            <li class="btn-item"><button type="button" class="menu-button-link">All</button></li>
+            <li class="btn-item"><button type="button" class="menu-button-link">Web Site</button></li>
+            <li class="btn-item"><button type="button" class="menu-button-link">App</button></li>
+            <li class="btn-item"><button type="button" class="menu-button-link">Design</button></li>
+            <li class="btn-item"><button type="button" class="menu-button-link">Marketing</button></li>
         </ul>
 
             <ul class="portfolio-list list">
                 <li class="portfolio-item link">
+                <div class="portfolio-info">
                     <a  class="portfolio-link link" href="./all"> <img src="./images/potfolio/one.jpg" alt="banking app" width="360">
                     <h2 class="portfolio-subtitle">Banking App Interface Concept</h2>
                     <p class="portfolio-text">App</p>
-                </a>
+                    </a>
+                </div>
                 </li>
                 <li class="portfolio-item link">
+                <div class="portfolio-info">
                     <a class="portfolio-link link" href="./marketing"> <img src="./images/potfolio/two.jpg" alt="cashless payment" width="360">
                     <h2 class="portfolio-subtitle">Cashless Payment</h2>
                     <p class="portfolio-text">Marketing</p>
                     </a>
+                </div>
                 </li>
-                <li class="portfolio-item link">
+                <div class="portfolio-item link">
+                    <div class="portfolio-info"></div>
                     <a class="portfolio-link link" href="./app"> <img src="./images/potfolio/three.jpg" alt="meditation app" width="360">
                     <h2 class="portfolio-subtitle">Meditation App</h2>
                     <p class="portfolio-text">App</p>
                     </a>
+                </div>
                 </li>
                 <li class="portfolio-item link">
                     <a class="portfolio-link link" href="./marketing"><img src="./images/potfolio/four.jpg" alt="taxi service" width="360">
@@ -110,6 +116,7 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
 
     </main>
