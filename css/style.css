@@ -155,12 +155,11 @@ ul{
 
 .hero {
     background-color: #2E2F42;
-    padding-bottom: 120px;
+    padding: 188px 0;
 }
 
 .hero-container{
     background-color: #2E2F42;
-    padding: 188px 472px 292px 472px;
 }
 
 .hero-title {
@@ -191,6 +190,7 @@ ul{
     box-shadow: 0px 4px 4px rgba (0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    min-width: 169px;
 }
 
 .hero-btn:hover,
@@ -281,7 +281,7 @@ ul{
 
 .team{
     background-color: #F4F4FD;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .team-item { 
@@ -454,9 +454,6 @@ body{
 .list {}
 
 .btn-item{
-    padding: 12px 24px;
-    border: 1px solid #e7e9fc;
-    border-radius: 4px;
 }
 
 .menu-button-link {
@@ -468,6 +465,9 @@ body{
     color: #4D5AE5;
     background-color:#F4F4FD;
     cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
 }
 
 .menu-button-link:hover,
@@ -482,11 +482,7 @@ body{
 
 }
 
-.portfolio-info{
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-}
+
 
 .portfolio-list  {
     text-decoration: none;
@@ -499,6 +495,7 @@ body{
 .portfolio-item  {
     text-decoration: none;
     width: calc((100% - 48px) / 3);
+    flex-wrap: wrap;
 }
 
 .portfolio-subtitle {
